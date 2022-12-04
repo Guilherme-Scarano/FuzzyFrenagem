@@ -45,8 +45,12 @@ public class FrmJFuzzyLogic extends javax.swing.JFrame {
         jLabelDistancia = new javax.swing.JLabel();
         jLabelVelocidade = new javax.swing.JLabel();
         jLabelpressao = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Sistema de Frenagem");
+        setMinimumSize(new java.awt.Dimension(825, 450));
+        getContentPane().setLayout(null);
 
         jSliderDistancia.setMaximum(30);
         jSliderDistancia.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -54,65 +58,46 @@ public class FrmJFuzzyLogic extends javax.swing.JFrame {
                 jSliderDistanciaStateChanged(evt);
             }
         });
+        getContentPane().add(jSliderDistancia);
+        jSliderDistancia.setBounds(397, 63, 200, 20);
 
-        jSliderVelocidade.setMaximum(80);
+        jSliderVelocidade.setMaximum(240);
         jSliderVelocidade.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jSliderVelocidadeStateChanged(evt);
             }
         });
+        getContentPane().add(jSliderVelocidade);
+        jSliderVelocidade.setBounds(400, 150, 200, 20);
 
+        jLabel1.setForeground(new java.awt.Color(255, 0, 51));
         jLabel1.setText("Distância");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(290, 70, 90, 16);
 
+        jLabel2.setForeground(new java.awt.Color(255, 0, 51));
         jLabel2.setText("Velocidade");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(290, 150, 90, 16);
 
+        jLabelDistancia.setForeground(new java.awt.Color(255, 0, 51));
         jLabelDistancia.setText("*");
+        getContentPane().add(jLabelDistancia);
+        jLabelDistancia.setBounds(639, 67, 80, 16);
 
+        jLabelVelocidade.setForeground(new java.awt.Color(255, 0, 51));
         jLabelVelocidade.setText("*");
+        getContentPane().add(jLabelVelocidade);
+        jLabelVelocidade.setBounds(639, 150, 110, 16);
 
+        jLabelpressao.setForeground(new java.awt.Color(255, 0, 51));
         jLabelpressao.setText("*");
+        getContentPane().add(jLabelpressao);
+        jLabelpressao.setBounds(491, 206, 90, 16);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(281, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
-                        .addGap(58, 58, 58)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSliderDistancia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jSliderVelocidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(42, 42, 42)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelVelocidade)
-                            .addComponent(jLabelDistancia))
-                        .addGap(195, 195, 195))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabelpressao)
-                        .addGap(343, 343, 343))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(63, 63, 63)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jSliderDistancia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabelDistancia))
-                .addGap(63, 63, 63)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jSliderVelocidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabelVelocidade))
-                .addGap(40, 40, 40)
-                .addComponent(jLabelpressao)
-                .addContainerGap(68, Short.MAX_VALUE))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fuzzyfrenagem/Imagem/distancia-de-frenagem.jpg"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 820, 420);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -167,6 +152,7 @@ public class FrmJFuzzyLogic extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelDistancia;
     private javax.swing.JLabel jLabelVelocidade;
     private javax.swing.JLabel jLabelpressao;
