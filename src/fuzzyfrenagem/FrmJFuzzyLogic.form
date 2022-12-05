@@ -44,7 +44,7 @@
     </Component>
     <Component class="javax.swing.JSlider" name="jSliderVelocidade">
       <Properties>
-        <Property name="maximum" type="int" value="240"/>
+        <Property name="maximum" type="int" value="80"/>
       </Properties>
       <Events>
         <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSliderVelocidadeStateChanged"/>

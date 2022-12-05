@@ -59,41 +59,41 @@ public class FrmJFuzzyLogic extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jSliderDistancia);
-        jSliderDistancia.setBounds(397, 63, 200, 20);
+        jSliderDistancia.setBounds(397, 63, 200, 26);
 
-        jSliderVelocidade.setMaximum(240);
+        jSliderVelocidade.setMaximum(80);
         jSliderVelocidade.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jSliderVelocidadeStateChanged(evt);
             }
         });
         getContentPane().add(jSliderVelocidade);
-        jSliderVelocidade.setBounds(400, 150, 200, 20);
+        jSliderVelocidade.setBounds(400, 150, 200, 26);
 
         jLabel1.setForeground(new java.awt.Color(255, 0, 51));
         jLabel1.setText("Distância");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(290, 70, 90, 16);
+        jLabel1.setBounds(290, 70, 90, 14);
 
         jLabel2.setForeground(new java.awt.Color(255, 0, 51));
         jLabel2.setText("Velocidade");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(290, 150, 90, 16);
+        jLabel2.setBounds(290, 150, 90, 14);
 
         jLabelDistancia.setForeground(new java.awt.Color(255, 0, 51));
         jLabelDistancia.setText("*");
         getContentPane().add(jLabelDistancia);
-        jLabelDistancia.setBounds(639, 67, 80, 16);
+        jLabelDistancia.setBounds(639, 67, 80, 14);
 
         jLabelVelocidade.setForeground(new java.awt.Color(255, 0, 51));
         jLabelVelocidade.setText("*");
         getContentPane().add(jLabelVelocidade);
-        jLabelVelocidade.setBounds(639, 150, 110, 16);
+        jLabelVelocidade.setBounds(639, 150, 110, 14);
 
         jLabelpressao.setForeground(new java.awt.Color(255, 0, 51));
         jLabelpressao.setText("*");
         getContentPane().add(jLabelpressao);
-        jLabelpressao.setBounds(491, 206, 90, 16);
+        jLabelpressao.setBounds(491, 206, 90, 14);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fuzzyfrenagem/Imagem/distancia-de-frenagem.jpg"))); // NOI18N
         getContentPane().add(jLabel3);

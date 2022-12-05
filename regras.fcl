@@ -14,7 +14,7 @@ END_VAR
 
 // Fuzzify input variable 'Distance'
 FUZZIFY Distancia
-    TERM perto := (0, 1) (5, 0) (10, 0); 
+    TERM perto := (0, 1) (5, 1) (10, 1); 
     TERM proximo := (10, 0) (15,1);
     TERM distante := (20, 0) (30, 1);
 END_FUZZIFY
@@ -46,7 +46,7 @@ RULEBLOCK No1
     // Use 'max' accumulation method
     ACCU : MAX;
 
-    RULE 1 : IF Distancia IS perto 
+    RULE 1 : IF Distancia IS perto and Velocidade is rapida
                 THEN pressao IS intensa;
 
     RULE 2 : IF Distancia IS proximo and Velocidade is lenta
@@ -59,7 +59,8 @@ RULEBLOCK No1
                 THEN pressao is intensa;
 
 	RULE 5: IF Distancia IS distante AND Velocidade IS normal 
-               THEN pressao IS fraca; 				   
+               THEN pressao IS fraca; 	
+			   
 
 	   
 END_RULEBLOCK
